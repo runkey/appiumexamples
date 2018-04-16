@@ -5,10 +5,10 @@
 	<artifactId>AppiumWork</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-        <properties>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        </properties>
+	<properties>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.8</maven.compiler.source>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
@@ -18,7 +18,7 @@
 		<dependency>
 			<groupId>io.appium</groupId>
 			<artifactId>java-client</artifactId>
-			<version>4.1.2</version>
+			<version>6.0.0-BETA4</version>
 		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>
