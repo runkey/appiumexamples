@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55760" started-at="2018-04-14T11:57:18Z" finished-at="2018-04-14T11:58:14Z">
+  <suite name="Default suite" duration-ms="23819" started-at="2018-04-16T09:36:00Z" finished-at="2018-04-16T09:36:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55760" started-at="2018-04-14T11:57:18Z" finished-at="2018-04-14T11:58:14Z">
-      <class name="AppiumTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:AppiumTest@77cd7a0]" name="setUp" is-config="true" duration-ms="27458" started-at="2018-04-14T11:57:18Z" finished-at="2018-04-14T11:57:45Z">
+    <test name="Default test" duration-ms="23819" started-at="2018-04-16T09:36:00Z" finished-at="2018-04-16T09:36:24Z">
+      <class name="TappingTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:TappingTest@63753b6d]" name="setUp" is-config="true" duration-ms="19516" started-at="2018-04-16T09:36:00Z" finished-at="2018-04-16T09:36:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase1()[pri:0, instance:AppiumTest@77cd7a0]" name="testCase1" duration-ms="24137" started-at="2018-04-14T11:57:45Z" finished-at="2018-04-14T11:58:09Z">
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:TappingTest@63753b6d]" name="testCase1" duration-ms="654" started-at="2018-04-16T09:36:20Z" finished-at="2018-04-16T09:36:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:AppiumTest@77cd7a0]" name="tearDown" is-config="true" duration-ms="4094" started-at="2018-04-14T11:58:09Z" finished-at="2018-04-14T11:58:14Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TappingTest@63753b6d]" name="tearDown" is-config="true" duration-ms="3587" started-at="2018-04-16T09:36:20Z" finished-at="2018-04-16T09:36:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- AppiumTest -->
+      </class> <!-- TappingTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
