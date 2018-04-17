@@ -1,0 +1,3 @@
+//  to get app package and app activity 
+
+// dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp'

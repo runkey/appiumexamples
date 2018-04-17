@@ -63,8 +63,7 @@ public class PressAndLongPress
 		
 		touch.press(PointOption.point(350, 300)).perform();  // press
 		
-	
-
+       
 		/*	List<MobileElement> me=driver.findElements(By.className("android.widget.FrameLayout"));
 
 		for(int i=0;i<me.size();i++)
@@ -84,7 +83,8 @@ public class PressAndLongPress
 		// tapping on web element/*
 
 
-
+    //   touch.
+		
 
 
 
