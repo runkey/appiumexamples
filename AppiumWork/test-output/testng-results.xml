@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65300" started-at="2018-04-17T12:27:05Z" finished-at="2018-04-17T12:28:10Z">
+  <suite name="Default suite" duration-ms="243814" started-at="2018-04-22T09:32:11Z" finished-at="2018-04-22T09:36:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65300" started-at="2018-04-17T12:27:05Z" finished-at="2018-04-17T12:28:10Z">
-      <class name="ScrollTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ScrollTest@f6c48ac]" name="setUp" is-config="true" duration-ms="48664" started-at="2018-04-17T12:27:05Z" finished-at="2018-04-17T12:27:53Z">
+    <test name="Default test" duration-ms="243814" started-at="2018-04-22T09:32:11Z" finished-at="2018-04-22T09:36:15Z">
+      <class name="DriverSpecific">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:DriverSpecific@f6c48ac]" name="setUp" is-config="true" duration-ms="224155" started-at="2018-04-22T09:32:11Z" finished-at="2018-04-22T09:35:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="testCase1()[pri:0, instance:ScrollTest@f6c48ac]" name="testCase1" duration-ms="5998" started-at="2018-04-17T12:27:53Z" finished-at="2018-04-17T12:27:59Z">
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:DriverSpecific@f6c48ac]" name="testCase1" duration-ms="15544" started-at="2018-04-22T09:35:55Z" finished-at="2018-04-22T09:36:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ScrollTest@f6c48ac]" name="tearDown" is-config="true" duration-ms="10552" started-at="2018-04-17T12:27:59Z" finished-at="2018-04-17T12:28:10Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:DriverSpecific@f6c48ac]" name="tearDown" is-config="true" duration-ms="4032" started-at="2018-04-22T09:36:11Z" finished-at="2018-04-22T09:36:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ScrollTest -->
+      </class> <!-- DriverSpecific -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

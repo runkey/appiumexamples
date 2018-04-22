@@ -6,18 +6,17 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.touch.TapOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 
+public class DriverSpecific 
+{
 
-public class TappingTest 
-
-{	
-	public AppiumDriver<MobileElement> driver;
+	public AndroidDriver<MobileElement> driver;
 	public DesiredCapabilities capabilities;
 	public File file;
 	public TouchAction<?> touch;
@@ -38,23 +37,37 @@ public class TappingTest
 		capabilities.setCapability("appPackage","io.selendroid.testapp");
 		capabilities.setCapability("appActivity","io.selendroid.testapp.HomeScreenActivity");
 		capabilities.setCapability("noReset","true");
-	//	capabilities.setCapability("unicodeKeyboard", true);
+		//	capabilities.setCapability("unicodeKeyboard", true);
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-		touch=new TouchAction<>(driver);
+
 
 	}
 
 	@Test
-	
+
 	public void testCase1() throws InterruptedException 
 	{
-		MobileElement e=	driver.findElement(By.id("io.selendroid.testapp:id/startUserRegistration"));
-		//touch.tap(e).perform();        //deprecated
-		//touch.tap(PointOption.point(500,300)).perform();  // to tap on x,y coordinates
-		touch.tap(new TapOptions().withElement(ElementOption.element(e))).perform();  // tapping on web element
+
+		System.out.println(driver.getContext());  ///  native,web,hybdrid
+		System.out.println(driver.getOrientation());   // landscapre,portrait
+		// driver.isLocked();
+		System.out.println(driver.isKeyboardShown());
+		System.out.println(driver.currentActivity());
+		System.out.println(driver.isKeyboardShown());
+		//	driver.hideKeyboard();
+		System.out.println(driver.getCurrentPackage());
+		driver.getCurrentPackage();
+
+	//	MobileElement e=	driver.findElement(By.id("io.selendroid.testapp:id/startUserRegistration"));
+	//	touch.tap(new TapOptions().withElement(ElementOption.element(e))).perform();  // tapping on web element
+	    driver.pressKeyCode(AndroidKeyCode.BACK);
 	    
-	   // touch.press
+	    Thread.sleep(12000);
+
+
+
 	}
+
 
 	@AfterClass
 	public void tearDown()
@@ -62,5 +75,4 @@ public class TappingTest
 
 		driver.quit();
 	}
-
 }
