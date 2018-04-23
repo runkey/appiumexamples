@@ -40,7 +40,6 @@ public class DriverSpecific
 		//	capabilities.setCapability("unicodeKeyboard", true);
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
-
 	}
 
 	@Test
@@ -63,6 +62,8 @@ public class DriverSpecific
 	    driver.pressKeyCode(AndroidKeyCode.BACK);
 	    
 	    Thread.sleep(12000);
+	    
+	   
 
 
 

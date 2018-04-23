@@ -1,6 +1,6 @@
 //  to get app package and app activity 
 
-// dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp'
+//1.adb shell   2. dumpsys window windows | grep -E 'mCurrentFocus|mFocusedApp'
 
 ANDROID_HOME=C:\Users\admin\AppData\Local\Android\Sdk
 
