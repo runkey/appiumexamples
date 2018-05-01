@@ -1,6 +1,8 @@
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
@@ -17,6 +19,7 @@ import io.appium.java_client.touch.offset.ElementOption;
 public class TappingTest 
 
 {	
+	
 	public AppiumDriver<MobileElement> driver;
 	public DesiredCapabilities capabilities;
 	public File file;
@@ -31,9 +34,9 @@ public class TappingTest
 		System.out.println(System.getProperty("user.dir"));
 		file=new File(System.getProperty("user.dir")+"\\apk\\selendroid-test-app.apk");
 		capabilities=new DesiredCapabilities();
-		capabilities.setCapability("deviceName", "1db4cebe9804");
+		capabilities.setCapability("deviceName", "MJVSBIHAZ5EIPNAI");
 		capabilities.setCapability("platformName", "Android");
-		capabilities.setCapability("platformVersion", "7.0");
+		capabilities.setCapability("platformVersion", "4.2");
 		capabilities.setCapability("app",file.getAbsolutePath());
 		capabilities.setCapability("appPackage","io.selendroid.testapp");
 		capabilities.setCapability("appActivity","io.selendroid.testapp.HomeScreenActivity");
@@ -41,6 +44,7 @@ public class TappingTest
 	//	capabilities.setCapability("unicodeKeyboard", true);
 		driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		touch=new TouchAction<>(driver);
+		driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
 
 	}
 
